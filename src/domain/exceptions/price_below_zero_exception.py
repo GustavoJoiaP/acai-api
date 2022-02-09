@@ -1,0 +1,2 @@
+class PriceBelowZeroException(Exception):
+    pass
