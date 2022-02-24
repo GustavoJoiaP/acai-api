@@ -1,6 +1,5 @@
 from typing import Optional
 
-from src.domain.entities.order import Order
 from src.domain.value_objects.price import Price
 from src.domain.value_objects.product_type import ProductType
 

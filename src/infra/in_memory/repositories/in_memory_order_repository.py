@@ -13,5 +13,17 @@ class InMemoryOrderRepository(OrderRepository):
         self.__orders.append(order)
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 repository = InMemoryOrderRepository()
 request_order_service = RequestOrderService(order_repository=repository)
