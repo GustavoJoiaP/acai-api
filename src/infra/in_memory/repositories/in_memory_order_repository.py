@@ -12,18 +12,5 @@ class InMemoryOrderRepository(OrderRepository):
     def save(self, order: Order):
         self.__orders.append(order)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-repository = InMemoryOrderRepository()
-request_order_service = RequestOrderService(order_repository=repository)
+    def list(self):
+        return self.__orders

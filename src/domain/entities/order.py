@@ -4,7 +4,6 @@ from typing import Optional
 from src.domain.entities.product import Product
 from src.domain.value_objects.garnish import Garnish
 from src.domain.value_objects.order_id import OrderID
-from src.domain.value_objects.product_type import ProductType
 from src.domain.value_objects.size import Size
 
 

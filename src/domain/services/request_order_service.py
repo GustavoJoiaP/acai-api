@@ -22,6 +22,6 @@ class RequestOrderService:
         order = Order(garnish=garnish, size=size, product=product)
         # este repositorio precisa ser definido externamente
         self.__order_repository.save(order)
-
+        
         return RequestOrderOutputDTO(order_id=str(order.id.value))
 
