@@ -3,6 +3,7 @@ from mysql.connector import MySQLConnection
 
 from src.domain.entities.order import Order
 from src.domain.repositories.order_repository import OrderRepository
+from src.domain.value_objects.order_id import OrderID
 
 
 class MysqlOrderRepository(OrderRepository):
@@ -19,3 +20,16 @@ class MysqlOrderRepository(OrderRepository):
         self.__connection.commit()
         # for row in cursor:
         #     print(row)
+
+    def select_all(self) -> list[Order]:
+        cursor = self.__connection.cursor()
+        cursor.execute("SELECT * FROM acai_api.order;")
+        self.__connection.commit()
+        print(list[cursor.get_rows()])
+
+    def find_by_id(self, id: OrderID) -> Order:
+        cursor = self.__connection.cursor()
+        cursor.execute("SELECT * FROM acai_api.order WHERE id ='" + str(id) + "' ;")
+        self.__connection.commit()
+
+        return cursor
