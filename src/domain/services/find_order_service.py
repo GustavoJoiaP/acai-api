@@ -5,7 +5,7 @@ from src.domain.data_transfer_objects.find_order_output_id_dto import FindOrderO
 from src.domain.entities.order import Order
 from src.domain.exceptions.order_not_found_exception import OrderNotFoundException
 from src.domain.repositories.order_repository import OrderRepository
-from src.domain.value_objects.order_id import OrderID
+from src.domain.value_objects.order_id import OrderId
 
 
 class FindOrderService:
@@ -15,7 +15,7 @@ class FindOrderService:
         self.__order_repository = order_repository
 
     def find_order_by_id(self, dto: FindOrderInputIDDTO) -> FindOrderOutputIDDTO:
-        order_id = OrderID(UUID(dto.orderID))
+        order_id = OrderId(UUID(dto.orderID))
         order = self.__order_repository.find_by_id(order_id)
         if order:
             # especificar dados de saida dto

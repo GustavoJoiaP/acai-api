@@ -3,7 +3,7 @@ from uuid import UUID, uuid4
 
 
 @dataclass(frozen=True)
-class OrderID:
+class OrderId:
     value: UUID = field(default_factory=uuid4)
 
 
