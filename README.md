@@ -37,3 +37,13 @@ O grande costume da comunidade é utilizar o código de uma aplicação estrutur
 Algumas implementações de arquitetura de camadas podem incluir camadas adicionais, como uma camada de serviços ou uma camada de infraestrutura.
 O principal objetivo da arquitetura de camadas é separar as *PREOCUPAÇÕES* do sistema em níveis distintos de abstração, permitindo  que cada camada seja implementada, testada e mantida de forma independente das outras. Isso facilita a escalabilidade, o teste e a manutenção do sistema, além de melhorar sua modularidade e flexibilidade.
 
+## A Arquitetura que Grita
+O que poderiamos tirar desse subtitulo? As palavras podem expressar para cada um que esta lendo um significado, por isso temos que ter cuidados na forma em que escolhemos as palavras para serem utilizadas tanto para um conversa no dia a dia, quanto na implementação de software que ficará por bons longos anos.
+No post [Screaming Architecture](https://blog.cleancoder.com/uncle-bob/2011/09/30/Screaming-Architecture.html) (MARTIN, 2011), Robert "Uncle Bob" Martin diz que a partir das plantas de edifícios, conseguimos saber se trata-se de uma casa ou uma biblioteca: a arquitetura "grita" a finalidade da construção.
+
+-  Portanto, o intuito da palavra "Grita" demonstra o sentido de _Chamar Atenção_, ou seja, a identificação torna-se mais rapido.
+-  Quando chegamos em uma Biblioteca, pode até ser um Biblioteca pequena, ao qual externamente pareça ser um Imovel Residencial, porém quando formos para dentro, a arquitetura irá "Gritar" para nos falando que é uma Biblioteca.
+ 	- Com livros.
+  	- Com Estantes.
+  	- Com Mesas para estudo.
+  	- Com uma Bibliotecaria.
